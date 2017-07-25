@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .content.others
+    h3.colortheme #{title} Me
+    form(method="post", action="contact/send")
+      label Name(*)
+      input(type="text", name="name", placeholder="Enter Your Name", required)
+      label Email(*)
+      input(type="email", name="email", placeholder="Enter Your Email", required)
+      label Message(*)
+      textarea(name="message", placeholder="Enter Message", required)
+      label Address(*)
+      textarea(name="address", placeholder="Enter Your Address", required)
+      button(type="submit", style="background: #0277bd; color: #fff;") SUBMIT

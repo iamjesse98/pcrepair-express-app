@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .content.others
+    h3.colortheme #{title}
+    .row
+    each service, i in services
+      div.col-12.themebg.container
+        h6.colortheme #{service.name}
+        p #{service.description}
+        p.colortheme(style='font-size: 16px') Price Range: #{service.price_range}
+      br

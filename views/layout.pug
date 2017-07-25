@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:400,700')
+    link(rel='stylesheet', href='/stylesheets/cirrus.min.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no')
+    meta(name='theme-color', content='#263238')
+  body
+    nav.navBar
+      nav.wrapper
+        .logo
+        // Logo
+        input#menu-toggle(type='checkbox')
+        label.label-toggle(for='menu-toggle')
+        ul
+          li(class=title=='Home' ? 'active' : undefined)
+            a(href='/') Home
+          li(class=title=='About' ? 'active' : undefined)
+            a(href='/about') About
+          li(class=title=='Services' ? 'active' : undefined)
+            a(href='/services') Services
+          li(class=title=='Contact' ? 'active' : undefined)
+            a(href='/contact') Contact
+    block content
+    
+    footer.text-center
+      p Coded By Jesse
+      p(style='font-size: 10px;') PC Repair &copy; 2017
